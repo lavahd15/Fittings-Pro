@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Fittings Pro | Reliability, Built to Last.</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="assets/img/favicon.png" type="image/jpg" >
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- Line Awesome CSS -->
+    <link href="assets/css/line-awesome.min.css" rel="stylesheet" >
+    <!-- Animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" >
+    <!-- Bar Filler CSS -->
+    <link href="assets/css/barfiller.css" rel="stylesheet" >
+    <!-- Magnific Popup Video -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" >
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/icon-font/flaticon.css">
+    <!-- Owl Carousel CSS -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" >
+    <!-- Nice Select  -->
+    <link href="assets/css/nice-select.css" rel="stylesheet" >
+    <!-- Style CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" >
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet" >
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Create a new FormData object
+            var formData = new FormData(event.target);
+
+            // Send the form data using fetch
+            fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Your response hass been submitted. We will contact you ASAP.\nMeanwhile you can give us a call at 667-445-9409 for immediate service.');// Show alert message
+                console.log(data); // Log the response from the PHP script
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Pre Loader -->
+ 	<div id="farny_preloader">
+		<div id="farny_circle_loader"></div>
+		<div class="farny_loader_logo"><img src="assets/img/preload.png" alt="Preload"></div>
+	</div>
+
+     <!-- Header Top Area  -->
+     <div class="header-top-area">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="header-top-left">
+                        <p>RELIABILITY, BUILT TO LAST.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="header-top-right-inner d-flex justify-content-end">
+                        <!-- Language Start -->
+                        <div class="header-top-lan-curr header-top-lan dropdown">
+                            <button class="dropdown-toggle">Reach Us
+                                <i class="las la-angle-down"></i>                                
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="tel:+16674459409">Call US</a></li>
+                                <li class="active"><a class="dropdown-item" href="mailto:info@fittingspro.com">Email US</a></li>
+                            </ul>
+                        </div>
+                        <!-- Language End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area -->
+    <div class="header-area header-three">
+        <div class="navigation">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2 col-12 mt-20 mb-20">
+                        <div class="header-left-wrap">
+                            <div class="logo">
+                                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="FP_logo" style="width: 350px; height: 200px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7 col-12">                        
+                        <div class="main-menu">
+                            <nav class="navbar navbar-expand-lg">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                    <span class="navbar-toggler-icon"></span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="index.html">Home<i class="las la-angle-down"></i>
+                                                <span class="sub-nav-toggler"> </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="shop.html">Shop<i class="las la-angle-down"></i>
+                                                <span class="sub-nav-toggler"> </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Products<i class="las la-angle-down"></i>
+                                                <span class="sub-nav-toggler"> </span>
+                                            </a>
+                                            <ul class="sub-menu">                                                                                                
+                                                <li><a href="products-4inchelbow.html">4" Self Locking Drop Elbow </a></li>                                                
+                                                <li><a href="4inchcoupler.html">4"x4" Coupler</a></li>                                                                                            
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact Us<i class="las la-angle-down"></i>
+                                                <span class="sub-nav-toggler"> </span>
+                                            </a>
+                                        </li>
+                                       
+                                      
+                                    </ul>
+                                    
+                                </div>
+                            </nav>
+                        </div>                        
+                    </div>
+                    
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Area  -->
+
+<div class="breadcrumb-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 text-center">
+				<div class="breadcroumb-title">
+					<h3>Contact Us</h3>
+					<h6><a href="index.html">Home</a> / Contact Us</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contact Section  -->
+
+<div class="contact-section section-padding">
+    <div class="container">
+        <div class="contact-info-wrapper">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="single-contact-info">
+                        <div class="contact-info-icon">
+                            <img src="assets/img/contact/1.png" alt="">
+                        </div>
+                        <h6>+1 (667) 445-9409</h6>
+                        <p>We are always happy to help.</p>
+                        <p>Call us to place an order.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="single-contact-info">
+                        <div class="contact-info-icon">
+                            <img src="assets/img/contact/2.png" alt="">
+                        </div>
+                        <h6><a href="mailto:info@fittingspro.com">info@fittingspro.com</a></h6>
+                        <p>Alternative way to get answer faster.</p>
+                        <p>Email us to place an order.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="single-contact-info">
+                        <div class="contact-info-icon">
+                            <img src="assets/img/contact/3.png" alt="">
+                        </div>
+                        <h6>Locations</h6>
+                        <p>Wilmington, DE&emsp;Baltimore, MD</p>
+                        <p>Hammonton, NJ&emsp;Fairfax, VA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="row">
+                    <div class="">
+                        <div class="contact-form-inner">
+                            <h6>Drop Us A Line</h6>
+                            <p>We look forward to hearing from you! Please complete the form below and one of our representatives will respond to your query in a timely manner.</p>
+                            <form onsubmit="handleSubmit(event)">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <select name="question" id="question">
+                                            <option value="1">I want to place an order</option>
+                                            <option value="0">I have a question about</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="cname" id="cname" placeholder="Company Name" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="address1" id="address1" placeholder="Delivery Address line 1" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="address2" id="address2" placeholder="Delivery Address line 2" >
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="city" id="city" placeholder="Delivery City" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="state" id="state" placeholder="Delivery State" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="zip" id="zip" placeholder="Delivery Zip" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea cols="30" rows="10" name="message" id="message" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit">Send</button>
+                                <!-- <a href="#" class="main-btn">Submit</a> -->
+                            </form>
+                        </div>                        
+                    </div>
+                    <!-- <div class="col-xl-5">
+                        <div class="contact-bg">
+                             <img src="assets/img/contact/contact-bg.png" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Area  -->
+    <div class="footer-area dark-bg section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-12">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="assets/img/logo-white.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">                    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-widget">
+                                <h5>About Us</h5>
+                                <ul>
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-widget">
+                                <h5>Shop By</h5>
+                                <ul>
+                                    <li><a href="#">New Arrival</a></li>
+                                    <li><a href="#">Best Seller</a></li>                                    
+                                    <li><a href="#">Feature Product</a></li>
+                                    <li><a href="#">Sale Off</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                    <div class="footer-widget">
+                        <h5>Reach Us</h5>
+                        <ul>
+                            <li><a href="tel:+16674459409" style="color:white">+1 667-445-9409</a></li>
+                            <li><a href="mailto:info@fittingspro.com" style="color:white">info@fittingspro.com</a></li>                              
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom Area  -->
+    <div class="footer-bottom dark-bg">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 col-12">
+                        <div class="copyright-area">
+                            <p class="copyright-line">© 2024 Fittings Pro. All rights reserved.</p>
+                        </div>
+                    </div>  
+                    <div class="col-md-7 col-12">
+                        <!-- <div class="footer-bottomr-right">
+                            <a href="#">Terms and Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div> -->
+                    </div>              
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <!-- Mini Cart Off-canvas Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+    <!-- Scroll Top Area -->
+    <a href="#top" class="go-top"><i class="las la-angle-up"></i></a>
+
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Pure Counter Up JS -->
+    <script src="assets/js/pure-counter.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="assets/js/isotope-3.0.6-min.js"></script>
+    <!-- Countdown JS -->
+    <script src="assets/js/simplyCountdown.js"></script>
+    <!-- Sticky JS -->
+    <script src="assets/js/jquery.sticky.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Zoom JS -->
+    <script src="assets/js/jquery.zoom.min.js"></script>
+    <!-- Progress Bar JS -->
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
